@@ -2,52 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Matriculation Countdown G12</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <title>G12 Countdown</title>
   <link rel="stylesheet" href="test.css">
 </head>
+
 <body>
 
-  <div class="container">
+<div class="wrapper">
 
-    <h1>🎓 G12 Matriculation Countdown</h1>
-    <p class="subtitle">From 8 May 2026 → 1 March 2027</p>
+  <h1>🎓 G12 Matriculation</h1>
+  <p class="subtitle">Countdown Timer</p>
 
-    <!-- Progress Bar -->
-    <div class="progress-wrapper">
-      <div class="progress-bar">
-        <div id="progress"></div>
-      </div>
-      <p id="progressText">0%</p>
+  <div class="progress-container">
+    <div class="bar">
+      <div id="progress"></div>
+    </div>
+    <p id="progressText">0%</p>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <div id="days">0</div>
+      <span>Days</span>
     </div>
 
-    <!-- Countdown -->
-    <div class="grid">
-      <div class="card">
-        <span id="days">0</span>
-        <label>Days</label>
-      </div>
-
-      <div class="card">
-        <span id="hours">0</span>
-        <label>Hours</label>
-      </div>
-
-      <div class="card">
-        <span id="minutes">0</span>
-        <label>Minutes</label>
-      </div>
-
-      <div class="card">
-        <span id="seconds">0</span>
-        <label>Seconds</label>
-      </div>
+    <div class="card">
+      <div id="hours">0</div>
+      <span>Hours</span>
     </div>
 
-    <p id="status"></p>
+    <div class="card">
+      <div id="minutes">0</div>
+      <span>Minutes</span>
+    </div>
+
+    <div class="card">
+      <div id="seconds">0</div>
+      <span>Seconds</span>
+    </div>
 
   </div>
 
-  <script src="test.js"></script>
+  <p id="status"></p>
+
+</div>
+
+<script src="test.js"></script>
 </body>
 </html>
