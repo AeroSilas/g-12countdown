@@ -25,7 +25,7 @@ function update() {
 
     progressEl.style.width = "100%";
     progressText.innerText = "100%";
-    statusEl.innerText = "🎉 Exam Time Reached!";
+    statusEl.innerText = "🎉 Exam Completed!";
     return;
   }
 
@@ -43,9 +43,9 @@ function update() {
   progress = Math.max(0, Math.min(progress, 100));
 
   progressEl.style.width = progress + "%";
-  progressText.innerText = progress.toFixed(1) + "% completed";
+  progressText.innerText = progress.toFixed(1) + "%";
 
-  statusEl.innerText = "🔥 Keep going G12 students!";
+  statusEl.innerText = "🔥 Stay focused G12!";
 }
 
 setInterval(update, 1000);
